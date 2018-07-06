@@ -1,14 +1,6 @@
 ;(function(w,d){
-    let routes = w.routes = {};
-    let routes_data = {
-        home : 'home/',
-        product : 'product/',
-        case_center : 'case_center/',
-        about_us : 'about_us/',
-        contact_us : 'contact_us/'
-    };
-    w.routes = {
-        path : routes_data,
+    w.routes = routes = {};
+    routes = {
         init : function(param){
             let path = location.hash.substr(1) || param;
             this.toChangeUrl(path);
@@ -21,6 +13,6 @@
     };
     w.addEventListener('hashchange',function(){
         let path = location.hash.substr(1);
-        w.routes.toChangeUrl(path);
+        routes.toChangeUrl(path);
     },false);
 })(window,document);

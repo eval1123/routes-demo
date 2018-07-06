@@ -1,2 +1,2 @@
 # routes-demo
-前端路由DEMO
+实现简单版前端路由DEMO

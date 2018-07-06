@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>前端路由</title>
+    <style type='text/css'>
+        *{ margin:0; padding:0; }
+        li{ list-style:none; }
+        .main{ margin:30px; overflow:hidden; }
+        .menu{ width:200px; float:left; }
+        .menu li{ padding:10px 0; border:#ddd solid 1px; border-bottom:none; border-right:none; text-align:center; }
+        .menu li:last-child{ border-bottom:#ddd solid 1px; }
+        .menu a{ color:#333; text-decoration:none; }
+        .cont{ min-width:300px; height:inherit; border:#ddd solid 1px; float:left; }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <ul class="menu">
+            <li><a href='#home/'>网站首页</a></li>
+            <li><a href='#product/'>产品中心</a></li>
+            <li><a href='#case_center/'>经典案例</a></li>
+            <li><a href='#about_us/'>关于我们</a></li>
+            <li><a href='#contact_us/'>联系我们</a></li>
+        </ul>
+        <div class="cont">
+            
+        </div>
+    </div>
+    <script type="text/javascript" src='routes.js'></script>
+    <script type="text/javascript" src="routes_data.js"></script>
+    <script type="text/javascript">
+        routes.init('home/');
+    </script>
+</body>
+</html>
